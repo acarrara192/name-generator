@@ -2,19 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-image: url('forest.jpg');
+  background-position: center center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +13,201 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  transition: background-image 0.5s ease; 
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-dark {
+  background-image: url('drowcave.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  transition: background-image 0.5s ease; 
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.elven-themed-div {
+  height: 55vh; 
+  width: 55vh;
+  padding: 20px;
+  background-color: rgba(248, 247, 247, 0.9);
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+
+}
+
+.elven-themed-div header {
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  color: #008000; /* Green color for header */
+}
+
+.elven-themed-div ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.elven-themed-div li {
+  margin-bottom: 5px;
+  padding: 2px;
+  color: #296b29; /* Indigo color for list items */
+  font-family: Baskerville;
+  font-size: 26px;
+}
+
+.elven-themed-div button {
+  position: absolute; /* Position the button absolutely within the container */
+  bottom: 27vh; /* Adjust this value to position the button vertically */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Move the button left by half its width to center it */
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Baskerville;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.elven-themed-div button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: translateX(-50%) scale(1.05) rotate(-1deg);
+
+}
+
+/* drow themed div */ 
+
+.drow-themed-div {
+  height: 55vh; 
+  width: 55vh;
+  padding: 20px;
+  background-color: rgba(248, 247, 247, 0.9);
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.drow-themed-div header {
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  color: indigo; 
+}
+
+.drow-themed-div ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.drow-themed-div li {
+  margin-bottom: 5px;
+  padding: 2px;
+  color: indigo; /* Indigo color for list items */
+  font-family: Baskerville;
+  font-size: 26px;
+}
+
+.drow-themed-div button {
+  position: absolute; /* Position the button absolutely within the container */
+  bottom: 27vh; /* Adjust this value to position the button vertically */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Move the button left by half its width to center it */
+  background-color: #f7c2fb;
+  border-radius: 100px;
+  box-shadow: rgba(128, 0, 201, .2) 0 -25px 18px -14px inset,rgba(128, 0, 201, .15) 0 1px 2px,rgba(128, 0, 201, .15) 0 2px 4px,rgba(128, 0, 201, .15) 0 4px 8px,rgba(128, 0, 201, .15) 0 8px 16px,rgba(128, 0, 201, .15) 0 16px 32px, rgba(128, 0, 201, .3) 0 0px 12px 2px;   cursor: pointer;
+  display: inline-block;
+  font-family: Baskerville;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.drow-themed-div button:hover {
+  box-shadow: rgba(128, 0, 201,.35) 0 -25px 18px -14px inset,rgba(128, 0, 201,.25) 0 1px 2px,rgba(128, 0, 201,.25) 0 2px 4px,rgba(128, 0, 201,.25) 0 4px 8px,rgba(128, 0, 201,.25) 0 8px 16px,rgba(128, 0, 201,.25) 0 16px 32px;
+  transform: translateX(-50%) scale(1.05) rotate(-1deg);
+}
+
+/* Sun moon toggle */
+
+#checkbox {
+  position: absolute;
+  left: 36%;
+  bottom: 27vh;
+  appearance: none;
+  outline: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background: #c3c3c3;
+  box-shadow: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+#checkbox:checked {
+  background: #8000c9;
+}
+
+#checkbox::before {
+  content: '';
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  border-radius: inherit;
+  width: 27px;
+  height: 27px;
+  background: #1be87d;
+  transition: inherit;
+}
+
+#checkbox::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: calc(100% + 27px);
+  border-radius: inherit;
+  width: 27px;
+  height: 27px;
+  background: #c3c3c3;
+  transition: inherit;
+}
+
+ #checkbox:checked::before {
+  left: calc(100% - 28px);
+  background: #cccccc;
+}
+
+ #checkbox:checked::after {
+  right: 10px;
+  background: #8000c9;
 }
